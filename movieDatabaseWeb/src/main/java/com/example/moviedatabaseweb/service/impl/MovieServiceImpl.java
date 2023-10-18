@@ -41,7 +41,7 @@ public class MovieServiceImpl implements MovieService {
     @Override
     public Movie getMovieById(int movieId) {
         if (movieId <=0) {
-            throw new IllegalArgumentException("game ID is required");
+            throw new IllegalArgumentException("movie ID is required");
         }
 
         return movieRepository.getMovieById(movieId);
